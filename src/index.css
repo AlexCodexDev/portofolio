@@ -1,3 +1,59 @@
+:root {
+  /* Typography */
+  --font-main: "Poppins", sans-serif;
+
+  /* Background */
+  --bg-primary: #04081a;
+  --bg-secondary: #0b1026;
+  --bg-card: #121933; 
+  --bg-primary-dark: #01030F;
+
+  /* Button */
+  --btn-primary: #8d9eff;
+  --btn-primary-hover: #a7b0ff;
+
+  /* Border */
+  --border-primary: #2a345e;
+
+  /* Brand Colors */
+  --brand-50: #eef0ff;
+  --brand-100: #d9deff;
+  --brand-200: #c9d2ff;
+  --brand-300: #b8bfff;
+  --brand-400: #a7b0ff;
+  --brand-500: #8d9eff;
+  --brand-600: #7282f2;
+  --brand-700: #5965d4;
+  --brand-800: #424aa6;
+  --brand-900: #2b306f;
+
+  /* Text */
+  --text-primary: #f5f7ff;
+  --text-secondary: #a7b0d4;
+  --text-muted: #7b84a8;
+
+  /* Effects */
+  --shadow-glow: 0 0 30px rgba(141, 158, 255, 0.15);
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+  /* Transition */
+  --transition: 0.3s ease;
+
+  color-scheme: light dark;
+  color: var(--text-primary);
+  background: var(--bg-primary-dark);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -28,9 +84,9 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
@@ -48,18 +104,21 @@
   #social .button-icon {
     filter: invert(1) brightness(2);
   }
-}
+} */
 
 #root {
-  width: 1126px;
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
+  border-inline: 1px solid var(--border-primary);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  color: var(--text-primary)
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -68,9 +127,9 @@ body {
 
 h1,
 h2 {
-  font-family: var(--heading);
+  font-family: var(--font-main);
   font-weight: 500;
-  color: var(--text-h);
+  color: var(--text-primary);
 }
 
 h1 {
@@ -100,12 +159,12 @@ code,
   font-family: var(--mono);
   display: inline-flex;
   border-radius: 4px;
-  color: var(--text-h);
+  color: var(--text-primary);
 }
 
 code {
   font-size: 15px;
   line-height: 135%;
   padding: 4px 8px;
-  background: var(--code-bg);
-} */
+  /* background: var(--code-bg); */
+}
