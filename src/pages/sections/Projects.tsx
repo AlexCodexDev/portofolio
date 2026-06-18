@@ -1,4 +1,4 @@
-import { Badge, Button, Card, CardTitle, Flex, Grid, GridItem, Heading, HStack, Icon, Image, Link, Separator, Text, VStack } from "@chakra-ui/react";
+import { Badge, Button, Card, CardTitle, Flex, Grid, GridItem, Heading, HStack, Icon, Image, Separator, Text, VStack } from "@chakra-ui/react";
 import logo from "../../assets/alexcodex.svg";
 import { FaGithub } from "react-icons/fa6";
 import { Stars } from "lucide-react";
