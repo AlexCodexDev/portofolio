@@ -51,7 +51,6 @@ export default function Experience() {
             justify="center"
             align="center"
             direction="column"
-            backgroundColor="var(--bg-primary)"
             py={8}
             px={{ base: 6, md: 12, lg: 20, xl: 32 }}
             gap={8}
